@@ -18,6 +18,7 @@ ol, ul {
 }
 
 .square {
+  cursor: pointer;
   background: #fff;
   border: 1px solid #999;
   float: left;
@@ -30,6 +31,28 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 34px;
+}
+
+.square:hover {
+  background-color: #ddd;
+}
+
+.square.active {
+  cursor: default;
+  background-color: #fff;
+}
+
+.square.blueText {
+  color: dodgerblue;
+}
+
+.square.redText {
+  color: tomato;
+}
+
+.square.win {
+  background-color: gold;
+  color: #fff;
 }
 
 .square:focus {
